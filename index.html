@@ -10,14 +10,23 @@
     * {
       padding: 0;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      font: 12px/18px "";
+      font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-size: 12px;
+      line-height: 18px;
     }
 
 
     .box {
-      width: 720px;
+      width: 61.8%;
       margin: auto;
+    }
+
+    @media only screen and (max-width: 888px) {
+      .box {
+        width: 888px;
+        margin: auto;
+      }
     }
 
     .header {
@@ -27,7 +36,8 @@
     }
 
     .header>h3 {
-      font: 36px/123px "";
+      font-size: 36px;
+      line-height: 123px;
       color: #538ed2;
       float: left;
     }
@@ -66,7 +76,8 @@
       background: #538ed2;
       float: left;
       color: #ffffff;
-      font: 12px/20px "";
+      font-size: 12px;
+      line-height: 20px;
       text-align: center;
     }
 
@@ -112,11 +123,12 @@
 
     .content>.xinxi>ul>li {
       list-style: none;
-      width: 289px;
+      width: 50%;
     }
 
     .content>.xinxi>ul>li>a {
-      font: 12px/18px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .content>.xinxi>ul>li:nth-of-type(2n)>a {
@@ -128,7 +140,10 @@
       margin-bottom: 10px
     }
 
-    .jineng>ul {}
+    .jineng>ul {
+      display: flex;
+      flex-direction: column;
+    }
 
     .jineng>ul>li {
       list-style: none;
@@ -136,7 +151,8 @@
 
     .jineng>ul>li>a {
       list-style: none;
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .jinli {}
@@ -146,31 +162,36 @@
     }
 
     .jinli>.jinli-top>p {
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
       float: left;
       margin-right: 50px;
     }
 
     .jinli>.jinli-bottom {
       margin: 10px 0 10px 20px;
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .jinli>.jinli-bottom>p {
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .xianmu {}
 
     .xianmu>p {
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
       margin: 10px 0 10px 20px;
     }
 
     .jiaoyu {}
 
     .jiaoyu>p {
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .xianmu>p:nth-of-type(1) {
@@ -179,12 +200,14 @@
     }
 
     .pingjia {
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .zhixie {
       margin-bottom: 20px;
-      font: 12px/22px "";
+      font-size: 12px;
+      line-height: 22px;
     }
 
     .te {
@@ -242,8 +265,8 @@
       <div class="q1"></div>
       <div class="jineng">
         <ul>
-          <li><a> *&nbsp;&nbsp;熟练掌握 <a class="te">HTML</a>、<a class="te">CSS</a>、<a class="te">JS</a></a>
-            等前端基础知识，可运用前端技术快速构建高性能项目</a></li>
+          <li><a> *&nbsp;&nbsp;熟练掌握 <a class="te">HTML</a>、<a class="te">CSS</a>、<a class="te">JS</a>
+              等前端基础知识，可运用前端技术快速构建高性能项目</a></li>
           <li><a> *&nbsp;&nbsp;熟练掌握响应式布局、网格布局弹性盒布局、百分比、rem等布局</a></li>
           <li><a> *&nbsp;&nbsp;熟练使用原生JS、jQuery 进行 DOM操作，以及页面动画效果制作</a></li>
           <li><a> *&nbsp;&nbsp;熟练使用 <a class="te">React</a> + <a class="te">Dav</a> + umi + Ant +<a class="te">JS/TS</a>
@@ -312,28 +335,9 @@
       </p>
       </br></br>
     </div>
+
     <div class="xianmu">
-      <p>*&nbsp项目二：人人做饭食谱(App) (未上线) (2018/7 -2018/12) </p>
-      <p>项目简介：做饭类APP，教你下厨煲汤煮菜做饭，蛋糕甜品烘培，享受美好的厨房生活，让味觉与视觉零距离，爱上自己的好厨艺。
-      </p>
-      <p>职责描述：</br>
-        &nbsp; 1. 配合UI负责项目页面整体布局，还原设计图。</br>
-        &nbsp; 2. 负责分类，详情页面，轮播，tab切换页面等</br>
-        &nbsp; 3. 负责移动端适配问题。</br>
-        &nbsp; 4. 负责完成与后端接口对接。</br>
-      </p>
-      <p>技术要点：</br>
-        &nbsp; 1. 使用 Vue 框架，以及Vue-router构建单页面应用。</br>
-        &nbsp; 2. 使用 Vue-cli3 构建项目环境。</br>
-        &nbsp; 3. 使用 Vuex 进行状态管理。</br>
-        &nbsp; 4. 使用 Scss 预处理css。</br>
-        &nbsp; 5. 使用 Git 管理项目更新和版本迭代。</br>
-        &nbsp; 6. 使用 Fetch 请求数据与后台进行数据交互。 </br>
-      </p>
-      </br></br>
-    </div>
-    <div class="xianmu">
-      <p>*&nbsp项目三：海淘 (移动端) (待上线) (2018/1 -2018/6) </p>
+      <p>*&nbsp项目二：海淘 (移动端) (待上线) (2018/1 -2018/6) </p>
       <p>项目简介：一款一站式海外购物平台，汇集各个国家和地区的认证商家，正品好货，海外直邮，汇集全球精品好货，同步全球品质生活。
       </p>
       <p>职责描述：</br>
@@ -353,7 +357,7 @@
       </br></br>
     </div>
     <div class="xianmu">
-      <p>*&nbsp项目四：彩虹育人（PC端） (待上线) （2017/7 -2017/12） </p>
+      <p>*&nbsp项目三：彩虹育人（PC端） (待上线) （2017/7 -2017/12） </p>
       <p>项目简介：彩虹育人是一款教育类网站主要面向学生家长，为了更好的提。高学校和家长之间的沟通，共同提高孩子学习情况的教育网站。
       </p>
       <p>职责描述：</br>
@@ -372,7 +376,7 @@
       </br></br>
     </div>
     <div class="xianmu">
-      <p>*&nbsp项目五：个人项目（响应式） </p>
+      <p>*&nbsp项目四：个人项目（响应式） </p>
       <p>项目简介：基于 Hexo 搭建的个人博客网站。</p>
       <p>技术要点：</br>
         &nbsp; 1. 基于 Node.js+Hexo-cli构建基础框架。</br>
